@@ -1,0 +1,22 @@
+#!/bin/sh
+# Remove Cursor attribution trailers before the commit is finalized.
+
+commit_msg_file=$1
+
+if [ ! -f "$commit_msg_file" ]; then
+	exit 0
+fi
+
+if sed --version 2>/dev/null | grep -q GNU; then
+	sed -i \
+		-e '/^[Cc]o-authored-by:.*cursoragent@cursor\.com/d' \
+		-e '/^[Cc]o-authored-by:.*[Cc]ursor/d' \
+		-e '/^Made-with: Cursor/d' \
+		"$commit_msg_file"
+else
+	sed -i '' \
+		-e '/^[Cc]o-authored-by:.*cursoragent@cursor\.com/d' \
+		-e '/^[Cc]o-authored-by:.*[Cc]ursor/d' \
+		-e '/^Made-with: Cursor/d' \
+		"$commit_msg_file"
+fi
