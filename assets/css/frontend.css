@@ -1,0 +1,84 @@
+.fppp-password-protected {
+	margin: 0;
+	background: #f6f7f7;
+	color: #1d2327;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.fppp-password-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.fppp-password-card {
+	width: 100%;
+	max-width: 520px;
+	padding: 32px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+	box-sizing: border-box;
+}
+
+.fppp-password-message {
+	margin: 0 0 24px;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.fppp-password-message p {
+	margin: 0 0 0.8em;
+}
+
+.fppp-password-message p:last-child {
+	margin-bottom: 0;
+}
+
+.fppp-password-form p {
+	margin: 0 0 16px;
+}
+
+.fppp-password-form label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.fppp-password-form input[type="password"] {
+	width: 100%;
+	max-width: 100%;
+	min-height: 40px;
+	padding: 8px 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.fppp-password-error {
+	margin: 8px 0 16px;
+	color: #b32d2e;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.fppp-password-form input[type="submit"] {
+	min-height: 40px;
+	padding: 8px 18px;
+	border: 0;
+	border-radius: 4px;
+	background: #2271b1;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.fppp-password-form input[type="submit"]:hover,
+.fppp-password-form input[type="submit"]:focus {
+	background: #135e96;
+}
